@@ -1,0 +1,24 @@
+{
+  "adapters": {
+    "java-debug-server": {
+      "name": "vscode-java",
+      "port": "${AdapterPort}"
+    }
+  },
+  "configurations": {
+    "Java Attach": {
+      "adapter": "java-debug-server",
+      "configuration": {
+        "request": "attach",
+        "host": "127.0.0.1",
+        "port": "5006"
+      },
+      "breakpoints": {
+        "exception": {
+          "caught": "N",
+          "uncaught": "N"
+        }
+      }
+    }
+  }
+}
